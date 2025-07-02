@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destination</title>
+        <style type="text/css">
+            body{
+                padding:0;
+                margin: 0;
+            }
+            header{
+                position: sticky;
+                top: 0;
+                padding: 15px;
+                background-color: rgb(50, 49, 49);
+                text-align: center;
+            }
+            nav a{
+                padding: 0px;
+                margin:20px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-size: 20px;
+            }
+            nav a:hover{
+                transform: translateY(-15px);
+                color: #c36d6d;
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .card{
+                width: 400px; 
+                height: 500px;
+                background-color: white;
+                margin: 50px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: transform 0.5s ease, background-color 0.4s ease ;
+            }
+            .card:hover{
+                transform: translateY(-15px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+            }
+            .card img{
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+            .content{
+                padding: 12px 25px;
+                color: rgb(0, 0, 0);
+            }
+            .content h2{
+                font-size: 25px;
+                margin-bottom:10px ;
+                color: rgb(40, 39, 39)
+            }
+            .content p{
+                font-size: 15px;
+                margin-bottom:30px ;
+                color: rgba(104, 101, 98, 0.827);
+            }
+            .content a{
+                text-decoration: none;
+                font-size: 16px;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #c36d6d;
+                border-radius: 5px;
+                color: white ;
+                margin-bottom: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            footer {
+                background-color: rgb(32, 31, 31);
+                text-align: center; 
+                color: white;
+                padding: 20px;
+                margin-top: 40px;
+            }
+            .footer-icons{
+                display: flex;
+                justify-content: center;            
+            }
+            .footer-icons a{
+                padding: 10px;
+                background-color: white;
+                margin: 10px;
+                border-radius: 50%;
+            }
+            .footer-icons a p{
+                color: black;
+                opacity: 0.9;
+            }
+            .footer-icons a:hover{
+                background-color: rgb(32, 31, 31);
+                transition: 0.5s;
+            }
+            .footer-icons a p:hover{
+                color: white;
+                transition: 0.5s;
+            }
+            .footer-links{
+                padding: 20px;
+            }
+            .footer-links a{
+                text-decoration: none;
+                color: white;
+                transition: transform 0.5s ;
+            }
+            .footer-links a:hover{
+                color: rgb(214, 211, 211);
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="destination.html">Destination</a>
+                <a href="traveltips.html">Travel Tips</a>
+                <a href="packages.html">Packages</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <br>
+        <h1>Things to do in Japan</h1>
+        <div class="container">
+            <div class="card">
+                <img src="tokyo.jpeg" alt="Detial 1">
+                <div class="content">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo became one of the world's most active major cities, boasting 
+                        attractions such as cutting-edge technology, information, culture, 
+                        and fashion, as well as a high level of public safety.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="fuji.jpeg" alt="Detial 2">
+                <div class="content">
+                    <h2>Mount Fuji</h2>
+                    <p>Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. 
+                        Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="osaka.webp" alt="Detial 3">
+                <div class="content">
+                    <h2>Osaka Castle</h2>
+                    <p>Osaka Castle is a Japanese castle in Chūō-ku, Osaka, Japan. The castle is one of Japan's
+                         most famous landmarks and played a major role in the unification of Japan during the 
+                         sixteenth century of the Azuchi–Momoyama period.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="kyoto.webp" alt="Detial 4">
+                <div class="content">
+                    <h2>Kyoto</h2>
+                    <p>Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its 
+                        numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines
+                         and traditional wooden houses. </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-icons">
+                <div class="icons">
+                    <a href="#"><p class="fa-brands fa-facebook"></p></a>
+                    <a href="#"><p class="fa-brands fa-instagram"></p></a>
+                    <a href="#"><p class="fa-brands fa-x-twitter"></p></a>
+                </div>
+            </div>
+            <div class="footer-links">
+            <a href="terms.html">Terms of use</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy.html">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>  
+        </footer>
+    </body>
+</html>
